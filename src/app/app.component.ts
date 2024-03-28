@@ -10,4 +10,20 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'patron-redux';
+
+  contador:number;
+
+  constructor() {
+    this.contador = 0;
+  }
+
+  increment() {
+    this.contador += 1;
+  }
+  decrement() {
+    this.contador -= 1;
+  }
+  reset () {
+    this.contador = 0;
+  }
 }
