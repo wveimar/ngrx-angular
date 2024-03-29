@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-nieto',
@@ -7,6 +7,12 @@ import { Component } from '@angular/core';
   templateUrl: './nieto.component.html',
   styleUrl: './nieto.component.css'
 })
-export class NietoComponent {
+export class NietoComponent implements OnInit {
+@Input() contador:number = 0;
+constructor() {}
 
+ngOnInit(){
+ 
+  
+}
 }
